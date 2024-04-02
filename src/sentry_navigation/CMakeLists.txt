@@ -18,6 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_srvs
   actionlib
   pcl_ros
+  robot_driver
   # PCL
 )
 

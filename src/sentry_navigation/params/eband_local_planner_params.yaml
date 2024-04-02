@@ -1,7 +1,7 @@
 EBandPlannerROS:
   # Common Parameters
   xy_goal_torelance: 0.1 #达到目标姿势的距离公差
-  yaw_goal_tolerance: 6.28 #达到所需目标姿势的方向公差
+  yaw_goal_tolerance: 0.5 #达到所需目标姿势的方向公差
   rot_stopped_vel: 0.1 #角速度下限，用于确定机器人是否应该停止以避免极限循环或锁定
   trans_stopped_vel: 0.1 #线速度下限，用于确定机器人是否应该停止以避免限制循环或锁定
 
@@ -34,7 +34,7 @@ EBandPlannerROS:
   virtual_mass: 0.75
   max_translational_acceleration: 0.75
   max_rotational_acceleration: 1.5
-  rotation_correction_threshold: 360
+  rotation_correction_threshold: 20
   differential_drive: False #表示是否使用差分驱动模式 全向移动底盘不需要
   bubble_velocity_multiplier: 2.0
   rotation_threshold_multiplier: 4.0
